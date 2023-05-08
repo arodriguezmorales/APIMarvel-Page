@@ -8,6 +8,7 @@ import { ApiMarvelService } from '../service/api-marvel.service';
 })
 export class ApiMarvelComponent {
   data: any = {};
+  dataArray: any = []
 
   constructor (private apiServiceMarvel: ApiMarvelService) {}
 
@@ -17,7 +18,8 @@ export class ApiMarvelComponent {
 
   getResponse(){
     this.apiServiceMarvel.getData().subscribe( data => {
-      this.data = data;
+      this.data = data.data.results;
+
       console.log(this.data);
     })
   }
