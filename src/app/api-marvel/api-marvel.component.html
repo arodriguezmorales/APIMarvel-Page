@@ -1,24 +1,21 @@
 <table class="table">
   <thead>
     <tr>
-      <th scope="col"></th>
-      <th scope="col"></th>
-      <th scope="col"></th>
-      <th scope="col"></th>
-      <th scope="col"></th>
+      <th></th>
+      <th>Titulo</th>
+      <th>Thumbnail</th>
     </tr>
   </thead>
   <tbody>
       <tr *ngFor="let item of data; let i = index">
-          <th scope="row"></th>
-          <th class="th-sm container">
-            <div class="row">
-              <img class="imageComics" src="{{ data[i].thumbnail.path + '.' + data[i].thumbnail.extension }}">
-            </div>
-            <div class="row">
-              <span class="label label-sm" style="font-size:15px">{{ data[i].title }}</span>
-            </div>
-          </th>
+        <td></td>
+        <td>{{ data[i].title }}</td>
+        <td></td>
+        <td class="container">
+          <div class="row">
+            <img class="imageComics" src="{{ data[i].thumbnail.path + '.' + data[i].thumbnail.extension }}">
+          </div>
+        </td>
       </tr>  
   </tbody>
 </table>
