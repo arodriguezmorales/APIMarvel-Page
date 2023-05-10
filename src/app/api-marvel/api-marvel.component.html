@@ -1,21 +1,12 @@
-<table class="table">
-  <thead>
-    <tr>
-      <th></th>
-      <th>Titulo</th>
-      <th>Thumbnail</th>
-    </tr>
-  </thead>
-  <tbody>
-      <tr *ngFor="let item of data; let i = index">
-        <td></td>
-        <td>{{ data[i].title }}</td>
-        <td></td>
-        <td class="container">
-          <div class="row">
-            <img class="imageComics" src="{{ data[i].thumbnail.path + '.' + data[i].thumbnail.extension }}">
-          </div>
+<div class="containerComic">
+  <table class="comicTable table table-sm">
+    <tbody>
+      <tr *ngFor="let row of dataArray">
+        <td *ngFor="let item of row">
+          <img class="comicImage" src="{{item.thumbnail.path + '.' + item.thumbnail.extension}}"/>
+          <p class="comicTitle font-weight-bold text-capitalize">{{item.title}}</p> 
         </td>
-      </tr>  
-  </tbody>
-</table>
+      </tr>
+    </tbody>
+  </table>
+</div>

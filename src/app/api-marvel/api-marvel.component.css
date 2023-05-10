@@ -1,3 +1,24 @@
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
 .imageComics {
     width: 100px;
+}
+
+.comicImage {
+    width: 100px;
+}
+
+.comicTitle {
+    text-align: center;
+    font-size: 13px;
+}
+
+.comicTable {
+    width: 100px;
+}
+
+.containerComic {
+    margin-left: 50%;
 }

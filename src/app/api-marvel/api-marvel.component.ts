@@ -20,7 +20,18 @@ export class ApiMarvelComponent {
     this.apiServiceMarvel.getData().subscribe( data => {
       this.data = data.data.results;
 
-      console.log(this.data);
+      // Procesar los datos y agregarlos a dataArray
+      let row = [];
+      for (let i = 0; i < this.data.length; i++) {
+        if (i > 0 && i % 5 === 0) {
+          this.dataArray.push(row);
+          row = [];
+        }
+        row.push(this.data[i]);
+      }
+      this.dataArray.push(row);
+
+      console.log(this.dataArray);
     })
   }
 }
