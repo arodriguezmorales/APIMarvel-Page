@@ -23,15 +23,14 @@ export class ApiMarvelComponent {
       // Procesar los datos y agregarlos a dataArray
       let row = [];
       for (let i = 0; i < this.data.length; i++) {
-        if (i > 0 && i % 5 === 0) {
+        if (i > 0 && i % 3 === 0) {
           this.dataArray.push(row);
           row = [];
         }
         row.push(this.data[i]);
       }
       this.dataArray.push(row);
-
-      console.log(this.dataArray);
+      console.log(this.dataArray)
     })
   }
 }
