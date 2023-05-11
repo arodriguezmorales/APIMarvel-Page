@@ -3,7 +3,7 @@
     <tbody>
       <tr *ngFor="let row of dataArray">
         <td *ngFor="let item of row">
-          <a href="{{item.urls[0].url}}" target="_blank">
+          <a class="linkComics" href="{{item.urls[0].url}}" target="_blank">
             <img class="comicImage" src="{{item.thumbnail.path + '.' + item.thumbnail.extension}}"/> 
             <p class="comicTitle font-weight-bold text-capitalize">{{item.title}}</p>
           </a>

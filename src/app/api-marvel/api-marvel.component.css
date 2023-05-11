@@ -24,7 +24,7 @@
 
 .comicImage {
     width: 150px;
-    box-shadow: 1px 0px 4px black;
+    box-shadow: 2px 2px 4px black;
 }
 
 .comicTitle {
@@ -40,4 +40,28 @@
 .containerComic {
     margin-top: 10%;
     margin-left: 10%;
+}
+
+.comicTitle {
+    text-shadow: 1px 1px 1px gray;
+}
+
+.linkComics {
+    text-decoration: none;
+}
+
+.linkComics:link {
+    color: black;
+}
+
+.linkComics:visited {
+    color: rgb(121, 118, 118);
+}
+
+.linkComics:hover img {
+    box-shadow: 3px 3px 4px rgb(218, 33, 33);
+}
+
+.linkComics:hover p {
+    color: red;
 }
