@@ -8,20 +8,33 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">
-          <img src="assets/Images/engranaje.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        </a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">
-          <img src="assets/Images/M.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        </a>
-      </li>
+    <ul class="navbar">
+      <div class="menu">
+        <li class="elementGear">
+          <a href="#">
+            <img class="gearImage" src="assets/Images/engranaje.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          </a>
+        </li>
+        <li class="elementDropdown">
+          <a href="#">
+            <img src="assets/Images/desplegable.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          </a>
+        </li>
+        <li class="elementM">
+          <a href="#">
+            <img src="assets/Images/M.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          </a>
+        </li>
+        <li class="elementSignIn">
+          <button class="buttonSingIn">SIGN IN / JOIN</button>
+        </li>
+       <li class="elementIconUser">
+          <a href="#">
+            <img src="assets/Images/usuarioIcono.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          </a>
+       </li> 
+      </div>
     </ul>
-  </nav>
   <app-api-marvel></app-api-marvel>
 </body>
 </html>
