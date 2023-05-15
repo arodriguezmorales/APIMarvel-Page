@@ -13,9 +13,24 @@ body {
     top: 0px;
     display: flex;
     align-items: center;
-    padding: 8px;
+    padding: 5px;
     background-color: rgb(144, 150, 150);
     color: #fff;
+}
+
+.navbarFooter {
+    display: fixed;
+    align-items: center;
+    margin-top: 27%;
+    padding: 3px;
+    background-color: rgb(144, 150, 150);
+    color: #fff;
+}
+
+.footer {
+    position: -webkit-sticky; /* for browser compatibility */
+    position: sticky;
+    bottom: 0px;
 }
 
 li {
@@ -49,12 +64,38 @@ li {
     font-family: 'Roboto';
 }
 
+.libreriaLink {
+    text-decoration: none;
+    font-family: 'Roboto';
+}
+
+.somosLink {
+    text-decoration: none;
+    font-family: 'Roboto';
+}
+
 .itemDrop:link {
     color: black;
 }
 
 .itemDrop:visited {
     color: rgb(121, 118, 118);
+}
+
+.libreriaLink:link {    
+    color: white
+}
+
+.libreriaLink:visited {
+    color: white;
+}
+
+.somosLink:link {    
+    color: white
+}
+
+.somosLink:visited {
+    color: white;
 }
 
 .dropDownList {

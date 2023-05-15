@@ -38,6 +38,8 @@ export class ApiMarvelComponent {
         rowRecent.push(this.dataArrayRecent[i]);
       }
       this.dataArray.push(row);
+      this.dataArrayRecent.push(rowRecent);
+
       console.log(this.dataArray)
     })
   }
