@@ -9,6 +9,7 @@ import { ApiMarvelService } from '../service/api-marvel.service';
 export class ApiMarvelComponent {
   data: any = {};
   dataArray: any = []
+  dataArrayRecent: any = []
 
   constructor (private apiServiceMarvel: ApiMarvelService) {}
 
@@ -22,12 +23,19 @@ export class ApiMarvelComponent {
 
       // Procesar los datos y agregarlos a dataArray
       let row = [];
+      let rowRecent = [];
+      let diffDays = 0;
+
       for (let i = 0; i < this.data.length; i++) {
         if (i > 0 && i % 3 === 0) {
           this.dataArray.push(row);
+          this.dataArrayRecent.push(rowRecent);
+
           row = [];
+          rowRecent = [];
         }
         row.push(this.data[i]);
+        rowRecent.push(this.dataArrayRecent[i]);
       }
       this.dataArray.push(row);
       console.log(this.dataArray)

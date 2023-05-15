@@ -1,8 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
 .navbar {
+    position: -webkit-sticky; /* for browser compatibility */
+    position: sticky;
+    top: 0px;
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 8px;
     background-color: rgb(144, 150, 150);
     color: #fff;
 }
@@ -16,7 +27,7 @@ li {
 }
 
 .elementSignIn {
-    padding-left: 33%;
+    padding-left: 30%;
 }
 
 .menu {
@@ -31,4 +42,35 @@ li {
     font-family: 'Roboto';
     width: 150px;
     height: 40px;
+}
+
+.itemDrop {
+    text-decoration: none;
+    font-family: 'Roboto';
+}
+
+.itemDrop:link {
+    color: black;
+}
+
+.itemDrop:visited {
+    color: rgb(121, 118, 118);
+}
+
+.dropDownList {
+    position: relative;
+    display: inline-block;
+    padding: 0px;
+}
+
+.dropDownList:hover .dropDownItems {
+    display: block;
+}
+
+.dropDownItems {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 100px;
+    z-index: 1;
 }
