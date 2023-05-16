@@ -12,7 +12,7 @@ export class ApiMarvelService {
 
   constructor(private http: HttpClient) { }
 
-  public getData(): Observable<any> {
+  public getDataComics(): Observable<any> {
     return this.http.get<any>(this.apiUrl);
   }
 }

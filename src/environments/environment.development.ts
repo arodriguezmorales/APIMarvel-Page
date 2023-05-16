@@ -9,5 +9,6 @@ let hash = CryptoJS.MD5(message).toString();
 
 export const environment = {
     production: false,
-    apiKeyComicMarvel: "https://gateway.marvel.com:443/v1/public/comics?ts="+ timeStamp +"&apikey="+ publicKey +"&hash="+hash 
+    apiKeyComicMarvel: "https://gateway.marvel.com:443/v1/public/comics?ts="+ timeStamp +"&apikey="+ publicKey +"&hash="+hash,
+    apiKeyCharactersMarvel: "https://gateway.marvel.com:443/v1/public/characters?ts="+ timeStamp +"&apikey="+ publicKey +"&hash="+hash  
 };

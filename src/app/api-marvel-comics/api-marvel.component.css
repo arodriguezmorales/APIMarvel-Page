@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../assets/Fonts/Roboto/Roboto-Bold.ttf') format('truetype'),
+    url('../../assets/Fonts/Roboto/Roboto-BlackItalic.ttf') format('truetype'),
+    url('../../assets/Fonts/Roboto/Roboto-Bold.ttf') format('truetype'),
+    url('../../assets/Fonts/Roboto/Roboto-BoldItalic.ttf') format('truetype'),
+    url('../../assets/Fonts/Roboto/Roboto-Italic.ttf') format('truetype'),
+    url('../../assets/Fonts/Roboto/Roboto-Light.ttf') format('truetype'),
+    url('../../assets/Fonts/Roboto/Roboto-LightItalic.ttf') format('truetype'),
+    url('../../assets/Fonts/Roboto/Roboto-Medium.ttf') format('truetype'),
+    url('../../assets/Fonts/Roboto/Roboto-MediumItalic.ttf') format('truetype'),
+    url('../../assets/Fonts/Roboto/Roboto-Regular.ttf') format('truetype'),
+    url('../../assets/Fonts/Roboto/Roboto-Thin.ttf') format('truetype'),
+    url('../../assets/Fonts/Roboto/Roboto-ThinItalic.ttf') format('truetype');
+}
+
+.gifLoading {
+    margin-top: 50%;
+}
+
+.table{
+    border: 1px dotted black;
+    border-radius: 1%; 
+}
+
+.imageComics {
+    width: 100px;
+}
+
+.table td {
+    padding: 10px;
+}
+
+.comicImage {
+    width: 150px;
+    box-shadow: 2px 2px 4px black;
+}
+
+.comicTitle {
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 13px;
+}
+
+.comicTable {
+    width: 100px;
+}
+
+.containerComic {
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.comicTitle {
+    text-shadow: 1px 1px 1px gray;
+}
+
+.linkComics {
+    text-decoration: none;
+}
+
+.linkComics:link {
+    color: black;
+}
+
+.linkComics:visited {
+    color: rgb(121, 118, 118);
+}
+
+.linkComics:hover img {
+    box-shadow: 3px 3px 4px rgb(218, 33, 33);
+}
+
+.linkComics:hover p {
+    color: red;
+}
