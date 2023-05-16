@@ -4,6 +4,7 @@ html {
 }
 
 body {
+    margin: 0px;
     min-height: 100%;
 }
 
@@ -11,11 +12,26 @@ body {
     position: -webkit-sticky; /* for browser compatibility */
     position: sticky;
     top: 0px;
+    margin: 0px;
     display: flex;
     align-items: center;
     padding: 5px;
     background-color: rgb(144, 150, 150);
     color: #fff;
+    border: 1px solid white;
+    border-bottom: 0px;
+}
+
+.navbarNavegation {
+    position: -webkit-sticky; /* for browser compatibility */
+    position: sticky;
+    top: 55px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(144, 150, 150);
+    color: #fff;
+    border: 1px solid white;
 }
 
 .navbarFooter {
@@ -38,7 +54,7 @@ li {
 }
 
 .elementM {
-    padding-left: 40%;
+    padding-left: 45%;
 }
 
 .elementSignIn {
@@ -62,6 +78,7 @@ li {
 .itemDrop {
     text-decoration: none;
     font-family: 'Roboto';
+    color: white;
 }
 
 .libreriaLink {
@@ -74,12 +91,10 @@ li {
     font-family: 'Roboto';
 }
 
-.itemDrop:link {
-    color: black;
-}
-
-.itemDrop:visited {
-    color: rgb(121, 118, 118);
+.navegationLink {
+    text-decoration: none;
+    font-family: 'Roboto';
+    color: white;
 }
 
 .libreriaLink:link {    
@@ -96,22 +111,4 @@ li {
 
 .somosLink:visited {
     color: white;
-}
-
-.dropDownList {
-    position: relative;
-    display: inline-block;
-    padding: 0px;
-}
-
-.dropDownList:hover .dropDownItems {
-    display: block;
-}
-
-.dropDownItems {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 100px;
-    z-index: 1;
 }

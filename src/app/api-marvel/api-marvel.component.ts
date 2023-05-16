@@ -10,7 +10,7 @@ export class ApiMarvelComponent {
   data: any = {};
   dataArray: any = []
   dataArrayRecent: any = []
-
+  isLoading = true;
   constructor (private apiServiceMarvel: ApiMarvelService) {}
 
   ngOnInit (): void {
@@ -37,10 +37,16 @@ export class ApiMarvelComponent {
         row.push(this.data[i]);
         rowRecent.push(this.dataArrayRecent[i]);
       }
+      this.isLoading = false;
+
       this.dataArray.push(row);
       this.dataArrayRecent.push(rowRecent);
 
       console.log(this.dataArray)
     })
+  }
+
+  get(){
+    return this.isLoading;
   }
 }

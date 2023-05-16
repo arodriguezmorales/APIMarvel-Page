@@ -1,14 +1,24 @@
+<!-- <div class="modal fade" id="loadingModal" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img class="gifLoading" src="../../assets/Gifts/Dual ring.gif">
+      </div>
+    </div>
+  </div>
+</div> -->
+
 <div class="containerComic">
-  <table class="comicTable table table-sm">
-    <tbody>
-      <tr *ngFor="let row of dataArray">
-        <td *ngFor="let item of row">
-          <a class="linkComics" href="{{item.urls[0].url}}" target="_blank">
-            <img class="comicImage" src="{{item.thumbnail.path + '.' + item.thumbnail.extension}}"/> 
-            <p class="comicTitle font-weight-bold text-capitalize">{{item.title}}</p>
-          </a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+    <table *ngIf="isLoading === false" class="comicTable table table-sm">
+      <tbody *ngIf="isLoading === false">
+        <tr *ngFor="let row of dataArray">
+          <td *ngFor="let item of row">
+            <a class="linkComics" href="{{item.urls[0].url}}" target="_blank">
+              <img class="comicImage" src="{{item.thumbnail.path + '.' + item.thumbnail.extension}}"/> 
+              <p class="comicTitle font-weight-bold text-capitalize">{{item.title}}</p>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 </div>
