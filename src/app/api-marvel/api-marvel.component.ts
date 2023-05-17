@@ -18,7 +18,7 @@ export class ApiMarvelComponent {
   }
 
   getResponse(){
-    this.apiServiceMarvel.getData().subscribe( data => {
+    this.apiServiceMarvel.getDataComics().subscribe( data => {
       this.data = data.data.results;
 
       // Procesar los datos y agregarlos a dataArray
