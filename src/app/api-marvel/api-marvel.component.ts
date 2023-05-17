@@ -27,7 +27,7 @@ export class ApiMarvelComponent {
       let diffDays = 0;
 
       for (let i = 0; i < this.data.length; i++) {
-        if (i > 0 && i % 3 === 0) {
+        if (i > 0 && i % 6 === 0) {
           this.dataArray.push(row);
           this.dataArrayRecent.push(rowRecent);
 
