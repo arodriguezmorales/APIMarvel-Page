@@ -10,6 +10,7 @@ export class ApiMarvelService {
 
   private apiUrlComics = environment.apiKeyComicMarvel;
   private apiUrlCharacters = environment.apiKeyCharactersMarvel;
+  private apiUrlEvents = environment.apiKeyEventsMarvel;
 
   constructor(private http: HttpClient) { }
 
@@ -19,5 +20,9 @@ export class ApiMarvelService {
 
   public getDataCharacters(): Observable<any> {
     return this.http.get<any>(this.apiUrlCharacters);
+  }
+
+  public getDataEvents(): Observable<any> {
+    return this.http.get<any>(this.apiUrlEvents);
   }
 }

@@ -1,1 +1,27 @@
-<p>api-marvel-home works!</p>
+<div class="tituloImperial">
+    <h4>LIBRERIA IMPERIAL: MARVEL COMICS</h4>
+</div>
+    
+<div class="titulo">
+    <h2>EL UNIVERSO MARVEL TE ESPERA</h2>
+</div>
+
+<div class="containerEvents">
+    <table *ngIf="isLoading === false" class="characterTable table table-sm">
+      <tbody *ngIf="isLoading === false">
+        <tr *ngFor="let row of dataArray">
+          <td *ngFor="let item of row">
+            <a class="linkEvents" href="{{item.urls[0].url}}" target="_blank">
+              <div class="description">
+                {{item.description}}
+              </div>
+              <div>
+                <img class="eventImage" src="{{item.thumbnail.path + '.' + item.thumbnail.extension}}"/>
+              </div>
+              <p class="eventTitle font-weight-bold text-capitalize">{{item.name}}</p>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>

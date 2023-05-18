@@ -1,0 +1,89 @@
+.tituloImperial {
+    font-family: 'Roboto';
+    color: red;
+    margin-left: 1%;
+}
+
+.titulo {
+    font-family: 'Roboto';
+    margin-left: 37%;
+}
+
+.containerEvent {
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.eventImage {
+    width: 200px;
+    box-shadow: 2px 2px 4px black;
+}
+
+.eventTitle {
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 13px;
+}
+
+.eventTable {
+    width: 100px;
+}
+
+.containerEvent {
+    margin-top: 3%;
+    margin-left: 1%;
+}
+
+.EventTitle {
+    text-shadow: 1px 1px 1px gray;
+}
+
+.gifLoading {
+    margin-top: 50%;
+}
+
+.imageEvents {
+    width: 100px;
+}
+
+.table td {
+    padding: 10px;
+}
+
+.linkEvents {
+    text-decoration: none;
+}
+
+.linkEvents:link {
+    color: black;
+}
+
+.linkEvents:visited {
+    color: rgb(121, 118, 118);
+}
+
+.linkEvents:hover img {
+    box-shadow: 3px 3px 4px rgb(218, 33, 33);
+}
+
+.linkEvents:hover .description {
+    opacity: 1;
+    transition: all 0.5s ease-in;
+}
+
+.linkEvents:hover p {
+    color: red;
+}
+
+.description {
+    font-family: 'Roboto';
+    font-size: 12px;
+    position: absolute;
+    opacity: 0;
+    text-align: center;
+    padding: 2px 2px 2px 2px;
+    background-color: rgb(187, 54, 54);
+    width: 200px;
+    color: white;
+    transition: all 0.5s ease-out;
+}
