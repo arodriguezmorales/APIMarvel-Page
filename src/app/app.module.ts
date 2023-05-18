@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ApiMarvelComponent } from './api-marvel/api-marvel.component';
+import { ApiMarvelHomeComponent } from './api-marvel-home/api-marvel-home.component';
+import { ApiMarvelCharactersComponent } from './api-marvel-characters/api-marvel-characters.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ApiMarvelComponent
+    ApiMarvelComponent,
+    ApiMarvelHomeComponent,
+    ApiMarvelCharactersComponent
   ],
   imports: [
     BrowserModule,
@@ -17,6 +20,6 @@ import { ApiMarvelComponent } from './api-marvel/api-marvel.component';
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [ApiMarvelComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

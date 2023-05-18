@@ -1,0 +1,14 @@
+<div class="containerCharacter">
+    <table *ngIf="isLoading === false" class="characterTable table table-sm">
+      <tbody *ngIf="isLoading === false">
+        <tr *ngFor="let row of dataArray">
+          <td *ngFor="let item of row">
+            <a class="linkCharacters" href="{{item.urls[0].url}}" target="_blank">
+              <img class="characterImage" src="{{item.thumbnail.path + '.' + item.thumbnail.extension}}"/> 
+              <p class="characterTitle font-weight-bold text-capitalize">{{item.name}}</p>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>

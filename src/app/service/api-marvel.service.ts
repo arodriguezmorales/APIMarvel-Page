@@ -8,11 +8,16 @@ import { Observable } from 'rxjs';
 })
 export class ApiMarvelService {
 
-  private apiUrl = environment.apiKeyComicMarvel;
+  private apiUrlComics = environment.apiKeyComicMarvel;
+  private apiUrlCharacters = environment.apiKeyCharactersMarvel;
 
   constructor(private http: HttpClient) { }
 
   public getDataComics(): Observable<any> {
-    return this.http.get<any>(this.apiUrl);
+    return this.http.get<any>(this.apiUrlComics);
+  }
+
+  public getDataCharacters(): Observable<any> {
+    return this.http.get<any>(this.apiUrlCharacters);
   }
 }

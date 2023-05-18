@@ -2,24 +2,24 @@ import { Component } from '@angular/core';
 import { ApiMarvelService } from '../service/api-marvel.service';
 
 @Component({
-  selector: 'app-api-marvel',
-  templateUrl: './api-marvel.component.html',
-  styleUrls: ['./api-marvel.component.css']
+  selector: 'app-api-marvel-characters',
+  templateUrl: './api-marvel-characters.component.html',
+  styleUrls: ['./api-marvel-characters.component.css']
 })
-export class ApiMarvelComponent {
+export class ApiMarvelCharactersComponent {
   data: any = {};
   dataArray: any = []
   dataArrayRecent: any = []
   isLoading = true;
-  
-  constructor (private apiServiceMarvel: ApiMarvelService) {}
+
+  constructor(private apiServiceMarvel: ApiMarvelService) {}
 
   ngOnInit (): void {
     this.getResponse();
   }
 
   getResponse(){
-    this.apiServiceMarvel.getDataComics().subscribe( data => {
+    this.apiServiceMarvel.getDataCharacters().subscribe( data => {
       this.data = data.data.results;
 
       // Procesar los datos y agregarlos a dataArray

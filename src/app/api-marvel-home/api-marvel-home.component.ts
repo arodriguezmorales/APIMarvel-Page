@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-api-marvel-home',
@@ -7,5 +6,5 @@ import { RouterModule, Routes } from '@angular/router';
   styleUrls: ['./api-marvel-home.component.css']
 })
 export class ApiMarvelHomeComponent {
-  constructor (public router:RouterModule) {}
+  constructor () {}
 }

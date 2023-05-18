@@ -1,4 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/Fonts/Roboto/Roboto-Bold.ttf') format('truetype'),
+    url('./assets/Fonts/Roboto/Roboto-BlackItalic.ttf') format('truetype'),
+    url('./assets/Fonts/Roboto/Roboto-Bold.ttf') format('truetype'),
+    url('./assets/Fonts/Roboto/Roboto-BoldItalic.ttf') format('truetype'),
+    url('./assets/Fonts/Roboto/Roboto-Italic.ttf') format('truetype'),
+    url('./assets/Fonts/Roboto/Roboto-Light.ttf') format('truetype'),
+    url('./assets/Fonts/Roboto/Roboto-LightItalic.ttf') format('truetype'),
+    url('./assets/Fonts/Roboto/Roboto-Medium.ttf') format('truetype'),
+    url('./assets/Fonts/Roboto/Roboto-MediumItalic.ttf') format('truetype'),
+    url('./assets/Fonts/Roboto/Roboto-Regular.ttf') format('truetype'),
+    url('./assets/Fonts/Roboto/Roboto-Thin.ttf') format('truetype'),
+    url('./assets/Fonts/Roboto/Roboto-ThinItalic.ttf') format('truetype');
+}
+
 html {
     height: 100%;
 }
@@ -37,7 +53,7 @@ body {
 .navbarFooter {
     display: fixed;
     align-items: center;
-    margin-top: 27%;
+    margin-top: 40%;
     padding: 3px;
     background-color: rgb(144, 150, 150);
     color: #fff;
@@ -58,7 +74,7 @@ li {
 }
 
 .elementSignIn {
-    padding-left: 30%;
+    padding-left: 35%;
 }
 
 .menu {

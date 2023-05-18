@@ -1,8 +1,37 @@
+.containerCharacter {
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.characterImage {
+    width: 150px;
+    box-shadow: 2px 2px 4px black;
+}
+
+.characterTitle {
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 13px;
+}
+
+.characterTable {
+    width: 100px;
+}
+
+.containercharacter {
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.characterTitle {
+    text-shadow: 1px 1px 1px gray;
+}
+
 .gifLoading {
     margin-top: 50%;
 }
 
-.imageComics {
+.imageCharacters {
     width: 100px;
 }
 
@@ -34,22 +63,22 @@
     text-shadow: 1px 1px 1px gray;
 }
 
-.linkComics {
+.linkCharacters {
     text-decoration: none;
 }
 
-.linkComics:link {
+.linkCharacters:link {
     color: black;
 }
 
-.linkComics:visited {
+.linkCharacters:visited {
     color: rgb(121, 118, 118);
 }
 
-.linkComics:hover img {
+.linkCharacters:hover img {
     box-shadow: 3px 3px 4px rgb(218, 33, 33);
 }
 
-.linkComics:hover p {
+.linkCharacters:hover p {
     color: red;
 }
