@@ -4,7 +4,7 @@
 }
 
 .characterImage {
-    width: 150px;
+    width: 200px;
     box-shadow: 2px 2px 4px black;
 }
 
@@ -18,9 +18,9 @@
     width: 100px;
 }
 
-.containercharacter {
-    margin-top: 10%;
-    margin-left: 15%;
+.containerCharacter {
+    margin-top: 3%;
+    margin-left: 1%;
 }
 
 .characterTitle {
@@ -39,30 +39,6 @@
     padding: 10px;
 }
 
-.comicImage {
-    width: 150px;
-    box-shadow: 2px 2px 4px black;
-}
-
-.comicTitle {
-    font-family: 'Roboto';
-    text-align: center;
-    font-size: 13px;
-}
-
-.comicTable {
-    width: 100px;
-}
-
-.containerComic {
-    margin-top: 10%;
-    margin-left: 15%;
-}
-
-.comicTitle {
-    text-shadow: 1px 1px 1px gray;
-}
-
 .linkCharacters {
     text-decoration: none;
 }
@@ -79,6 +55,35 @@
     box-shadow: 3px 3px 4px rgb(218, 33, 33);
 }
 
+.linkCharacters:hover .description {
+    opacity: 1;
+    transition: all 0.5s ease-in;
+}
+
 .linkCharacters:hover p {
     color: red;
+}
+
+.tituloImperial {
+    font-family: 'Roboto';
+    color: red;
+    margin-left: 1%;
+}
+
+.titulo {
+    font-family: 'Roboto';
+    margin-left: 41%;
+}
+
+.description {
+    font-family: 'Roboto';
+    font-size: 15px;
+    position: absolute;
+    opacity: 0;
+    text-align: center;
+    padding: 2px 2px 2px 2px;
+    background-color: rgb(187, 54, 54);
+    width: 200px;
+    color: white;
+    transition: all 0.5s ease-out;
 }

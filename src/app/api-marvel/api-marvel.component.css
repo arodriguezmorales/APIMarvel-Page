@@ -27,7 +27,7 @@
 
 .containerComic {
     margin-top: 10%;
-    margin-left: 15%;
+    margin-left: 11%;
 }
 
 .comicTitle {
@@ -52,4 +52,15 @@
 
 .linkComics:hover p {
     color: red;
+}
+
+.tituloImperial {
+    font-family: 'Roboto';
+    color: red;
+    margin-left: 1%;
+}
+
+.titulo {
+    font-family: 'Roboto';
+    margin-left: 45%;
 }
