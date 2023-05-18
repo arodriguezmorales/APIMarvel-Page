@@ -5,7 +5,7 @@ import { ApiMarvelHomeComponent } from './api-marvel-home/api-marvel-home.compon
 import { ApiMarvelCharactersComponent } from './api-marvel-characters/api-marvel-characters.component';
 
 const routes: Routes = [
-  { path: 'Home', component:ApiMarvelHomeComponent },
+  { path: '', component:ApiMarvelHomeComponent },
   { path: 'Comics', component:ApiMarvelComponent },
   { path: 'Characters', component:ApiMarvelCharactersComponent }
 ];
