@@ -11,5 +11,6 @@ export const environment = {
     production: false,
     apiKeyComicMarvel: "https://gateway.marvel.com:443/v1/public/comics?ts="+ timeStamp +"&apikey="+ publicKey +"&hash="+hash,
     apiKeyCharactersMarvel: "https://gateway.marvel.com:443/v1/public/characters?ts="+ timeStamp +"&apikey="+ publicKey +"&hash="+hash,
-    apiKeyEventsMarvel: "https://gateway.marvel.com:443/v1/public/events?ts="+ timeStamp +"&apikey="+ publicKey +"&hash="+hash
+    apiKeyEventsMarvel: "https://gateway.marvel.com:443/v1/public/events?ts="+ timeStamp +"&apikey="+ publicKey +"&hash="+hash,
+    apiKeySeriesMarvel: "https://gateway.marvel.com:443/v1/public/series?ts="+ timeStamp +"&apikey="+ publicKey +"&hash="+hash
 };
